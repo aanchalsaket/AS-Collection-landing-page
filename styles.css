@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Ubuntu:wght@300&display=swap');
+
+:root {
+  --bg-color: hsl(220, 18%, 78%);
+  --primary-color: hsl(220, 28%, 41%);
+  --primary-color-dark: hsl(216, 61%, 25%);
+  --secondary-color: hsl(228, 100%, 98%);
+  --text-dark: hsl(218, 94%, 7%);
+  --text-light: hsl(220, 48%, 25%);
+  --extra-light: #ffffff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lora', serif;
+}
+
+nav {
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: var(--max-width);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+}
+
+.nav__logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.nav__logo span {
+  color: var(--primary-color);
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+
+.link a {
+  padding: 0 1rem;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+.link a:hover {
+  color: var(--primary-color);
+  font-weight: bold;
+  /* background-color: hsl(219, 16%, 60%); */
+}
