@@ -218,3 +218,46 @@ img {
     background-color: var(--extra-light);
     cursor: pointer;
 }
+
+.collection {
+    background-color: var(--bg-color);
+}
+
+.collection__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    background-color: var(--bg-color);
+}
+
+.cloth__collection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.collection__col {
+    display: grid;
+    place-content: center;
+    gap: 1rem;
+}
+
+.collection__col img {
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.collection__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.collection__content>div {
+    max-width: 400px;
+}
+
+.collection__content .section__subtitle {
+    margin-bottom: 2rem;
+}
