@@ -334,3 +334,7 @@ img {
     font-size: 1rem;
     font-weight: 600;
 }
+
+.rating {
+    color: goldenrod;
+}
