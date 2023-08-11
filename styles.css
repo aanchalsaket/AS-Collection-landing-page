@@ -361,3 +361,8 @@ img {
     cursor: pointer;
     transition: 0.3s;
 }
+
+.buy__now:hover {
+    color: var(--extra-light);
+    background-color: var(--primary-color);
+}
