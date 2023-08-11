@@ -1,135 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Ubuntu:wght@300&display=swap');
 
 :root {
-  --bg-color: hsl(220, 18%, 78%);
-  --primary-color: hsl(220, 28%, 41%);
-  --primary-color-dark: hsl(216, 61%, 25%);
-  --secondary-color: hsl(228, 100%, 98%);
-  --text-dark: hsl(218, 94%, 7%);
-  --text-light: hsl(220, 48%, 25%);
-  --extra-light: #ffffff;
-  --max-width: 1200px;
+    --bg-color: hsl(220, 18%, 78%);
+    --primary-color: hsl(220, 28%, 41%);
+    --primary-color-dark: hsl(216, 61%, 25%);
+    --secondary-color: hsl(228, 100%, 98%);
+    --text-dark: hsl(218, 94%, 7%);
+    --text-light: hsl(220, 48%, 25%);
+    --extra-light: #ffffff;
+    --max-width: 1200px;
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Lora', serif;
+    font-family: 'Lora', serif;
 }
 
 nav {
-  padding: 1rem;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: var(--max-width);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--bg-color);
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: var(--max-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-color);
 }
 
 .nav__logo {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--text-dark);
-  cursor: pointer;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    cursor: pointer;
 }
 
 .nav__logo span {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .nav__links {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  font-size: 1.3rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.3rem;
 }
 
 .link a {
-  padding: 0 1rem;
-  color: var(--text-dark);
-  transition: 0.3s;
+    padding: 0 1rem;
+    color: var(--text-dark);
+    transition: 0.3s;
 }
 
 .link a:hover {
-  color: var(--primary-color);
-  font-weight: bold;
-  /* background-color: hsl(219, 16%, 60%); */
+    color: var(--primary-color);
+    font-weight: bold;
+    /* background-color: hsl(219, 16%, 60%); */
 }
 
 header {
     background-color: var(--bg-color);
-  }
-  
-  .header__container {
+}
+
+.header__container {
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-  }
-  
-  .header__image {
+}
+
+.header__image {
     position: relative;
-  }
-  
-  .header__image img {
+}
+
+.header__image img {
     position: absolute;
     top: 50%;
     left: 50%;
     border: 0.5rem solid var(--extra-light);
     border-radius: 2rem;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
-  }
-  
-  .header__image img:nth-child(1) {
+}
+
+.header__image img:nth-child(1) {
     max-width: 350px;
     transform: translate(-75%, -50%);
-  }
-  
-  .header__image img:nth-child(2) {
+}
+
+.header__image img:nth-child(2) {
     max-width: 250px;
     transform: translate(0%, -25%);
-  }
-  
-  .header__content {
+}
+
+.header__content {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .header__content > div {
+}
+
+.header__content>div {
     max-width: 400px;
     display: grid;
     gap: 1rem;
-  }
-  
-  .header__content .sub__header {
+}
+
+.header__content .sub__header {
     font-size: 1rem;
     font-weight: 600;
     color: var(--primary-color);
-  }
-  
-  .header__content h1 {
+}
+
+.header__content h1 {
     font-size: 3rem;
     line-height: 4rem;
     font-weight: 800;
     color: var(--text-dark);
-  }
-  
-  .header__content .action__btns {
+}
+
+.header__content .action__btns {
     display: flex;
     align-items: center;
     gap: 2rem;
     margin-top: 1rem;
-  }
-
-  
+}
